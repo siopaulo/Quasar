@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href=js/2d22c0ff.277e448a.js rel=prefetch><link href=js/7089f5c5.512a4999.js rel=prefetch>
+    <link href=js/a04e089a.aae509c8.js rel=prefetch><link href=js/f73ee9c4.5b174a3e.js rel=prefetch>
+    <link href=css/app.ff8c2269.css rel=preload as=style><link href=js/app.daf4d248.js rel=preload as=script>
+    <link href=js/runtime.0dcededa.js rel=preload as=script><link href=js/vendor.91e980cd.js rel=preload as=script>
+    <link href=css/app.ff8c2269.css rel=stylesheet>
+    <script>
+            export default {
+              data () {
+                return {
+                  progress: 0.4
+                }
+              },
+            
+              methods: {
+                randomize () {
+                  this.progress = Math.random()
+                }
+              }
+            }
+    </script>
+</head>
+<body>
+    
+    <template>
+        <div class="q-pa-md">
+          <q-btn size="sm" color="primary" @click="randomize" label="Change Model" />
+      
+          <q-linear-progress :value="progress" class="q-mt-md" />
+      
+          <q-linear-progress :value="progress" color="warning" class="q-mt-sm" />
+      
+          <q-linear-progress :value="progress" color="secondary" class="q-mt-sm" />
+      
+          <q-linear-progress :value="progress" rounded color="accent" class="q-mt-sm" />
+      
+          <q-linear-progress :value="progress" rounded color="purple" track-color="orange" class="q-mt-sm" />
+      
+          <q-linear-progress :value="progress" rounded color="negative" class="q-mt-sm" />
+        </div>
+      </template>
+</body>
+</html>
